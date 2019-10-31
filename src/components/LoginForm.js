@@ -19,10 +19,10 @@ class LoginForm extends React.Component {
   onSubmit = (event) => {
     event.preventDefault()
     if (!this.state.username || !this.state.password) { 
-      this.props.handleLogin(this.state)
-    } else {
       console.log('Both fields must be filled')
       return null
+    } else {
+      this.props.handleLogin(this.state)
     }
   }
 
