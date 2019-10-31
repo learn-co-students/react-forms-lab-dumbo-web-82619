@@ -20,7 +20,6 @@ class LoginForm extends React.Component {
     event.preventDefault()
     if (!this.state.username || !this.state.password) { 
       console.log('Both fields must be filled')
-      return null
     } else {
       this.props.handleLogin(this.state)
     }
@@ -36,7 +35,6 @@ class LoginForm extends React.Component {
               type="text"
               id="username"
               name="username"
-              value={this.state.username}
               onChange={this.handleChange} 
             />
           </label>
@@ -48,7 +46,6 @@ class LoginForm extends React.Component {
               type="password"
               id="password" 
               name="password" 
-              value={this.state.password}
               onChange={this.handleChange}  
             />
           </label>
