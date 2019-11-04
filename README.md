@@ -68,7 +68,7 @@ component's state on every change.
 5. Remember that you can retrieve the input `name` and `value` of an
 `event.target` from the JS event.
 
-6. Add the necessary event handler to the `<form>` element in order to call the `onSubmit` callback prop.
+<!-- 6. Add the necessary event handler to the `<form>` element in order to call the `onSubmit` callback prop. -->
 
 7. The `onSubmit` callback prop should only be called if _both_ fields are
 filled in (with any value).
